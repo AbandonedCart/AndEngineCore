@@ -146,11 +146,11 @@ public class AnimationData implements IAnimationData {
 		final int frameCount = this.mFrameCount;
 		for(int i = 0; i < frameCount; i++) {
 			if(frameEnds[i] > pAnimationProgress) {
-				return i;
+				    return i;
 			}
 		}
 
-		return frameCount - 1;
+        return frameCount - 1;
 	}
 
 	@Override

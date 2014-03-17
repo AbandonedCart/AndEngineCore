@@ -42,6 +42,7 @@ import org.andengine.opengl.vbo.VertexBufferObjectManager;
 import org.andengine.util.debug.Debug;
 import org.andengine.util.time.TimeConstants;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
@@ -66,6 +67,8 @@ import android.view.WindowManager;
  * @author Nicolas Gramlich
  * @since 12:21:31 - 08.03.2010
  */
+@SuppressLint("WrongCall")
+@SuppressWarnings("deprecation")
 public class Engine implements SensorEventListener, OnTouchListener, ITouchEventCallback, LocationListener {
 	// ===========================================================
 	// Constants

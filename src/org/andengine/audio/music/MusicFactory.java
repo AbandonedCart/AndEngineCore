@@ -61,6 +61,7 @@ public class MusicFactory {
 	// Methods
 	// ===========================================================
 
+	@SuppressWarnings("resource")
 	public static Music createMusicFromFile(final MusicManager pMusicManager, final File pFile) throws IOException {
 		final MediaPlayer mediaPlayer = new MediaPlayer();
 
